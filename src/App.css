@@ -1,0 +1,1867 @@
+@import url("./Animations.css");
+@import url("./fonts.css");
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  text-transform: capitalize !important;
+  font-family: inter-regular !important;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* guestNavbar */
+.GnavBar {
+  position: sticky;
+  z-index: 1111;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 10px 0px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #000;
+
+  .navinner {
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      text-align: start;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        img {
+          width: 10%;
+        }
+      }
+    }
+
+    .logBtns {
+      text-align: end;
+
+      .logBtn {
+        margin: 0px 10px;
+        border: none;
+        padding: 5px 10px;
+        background-color: transparent;
+      }
+
+      .logIn {
+        a {
+          font-family: inter-bold !important;
+          text-decoration: none;
+          color: #1e293b;
+        }
+      }
+
+      .signUp {
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        border-radius: 8px;
+
+        a {
+          font-family: inter-bold !important;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* offCanvas */
+.offCanvTriger {
+  border: none;
+  background-color: #3cb371;
+  color: #fff;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 111;
+}
+
+.offcanvas {
+  background-color: #d9d9d9d3;
+  backdrop-filter: blur(10px);
+  width: 25dvw !important;
+
+  .offcanvas-header {
+    .logo {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        img {
+          width: 30%;
+        }
+      }
+
+      h6 {
+        font-weight: bold;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  .offcanvas-body {
+    .offCanList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .offcanvItem {
+        margin: 20px 0px;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          transition: all 0.3s ease-in-out;
+        }
+
+        img {
+          width: 7%;
+          margin-inline-end: 5px;
+        }
+
+        &:hover {
+          a {
+            color: #3cb371;
+          }
+        }
+      }
+    }
+
+    .logBtns {
+      padding: 50px 0px;
+
+      .logBtn {
+        display: block;
+        margin: 10px 0px;
+        border: none;
+        padding: 5px 10px;
+        background-color: transparent;
+      }
+
+      .logIn {
+        a {
+          font-family: inter-bold !important;
+          text-decoration: none;
+          color: #1e293b;
+        }
+      }
+
+      .signUp {
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        border-radius: 8px;
+
+        a {
+          font-family: inter-bold !important;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* navbar */
+.navBar {
+  position: sticky;
+  z-index: 1111;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 10px 0px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #000;
+
+  .navinner {
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      text-align: start;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .navs {
+      justify-content: start;
+      align-items: center;
+
+      .navList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .navItem {
+          display: inline;
+          margin: 0px 10px;
+
+          img {
+            width: 2%;
+            margin-inline-end: 5px;
+          }
+
+          .navLink {
+            text-transform: capitalize !important;
+            text-decoration: none;
+            color: #1e293b;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: #3cb371;
+            }
+          }
+
+          .here {
+            color: #3cb371;
+          }
+        }
+      }
+    }
+
+    .profile {
+      text-align: end;
+      padding: 0px 10px;
+      h5 {
+        display: inline;
+      }
+      span {
+        color: #fff;
+        padding: 10px;
+        margin-inline-start: 10px;
+        border-radius: 50%;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+      }
+    }
+  }
+}
+
+/* header */
+.header {
+  padding: 30px 0px;
+
+  .headerInner {
+    justify-content: center;
+    align-items: center;
+
+    .textPart {
+      text-align: center;
+      padding: 20px 0px;
+
+      .title {
+        font-family: inter-bold !important;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+
+      .subTitle {
+        font-family: inter-bold !important;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 15px;
+      }
+
+      .para {
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+
+      .headerBtn {
+        margin: 20px 0px;
+        padding: 10px 20px;
+        border: none;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover {
+          box-shadow: 0 0 10px #3cb371;
+        }
+      }
+    }
+
+    .cardsPart {
+      padding: 50px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      .itemCard {
+        background-color: #fff;
+        border-radius: 10px;
+
+        .cardIcon {
+          text-align: start;
+          padding: 20px 0px;
+
+          img {
+            width: 10%;
+          }
+        }
+
+        .cardText {
+          text-align: start;
+          padding: 0px;
+
+          h4 {
+            margin-bottom: 10px;
+            font-family: inter-bold !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* how to */
+.howTo {
+  padding: 30px 0px;
+  background-color: #fff;
+
+  .HowToInner {
+    justify-content: center;
+    align-items: center;
+
+    .headerText {
+      text-align: center;
+      color: #1e293b;
+
+      h3 {
+        font-family: inter-bold !important;
+      }
+    }
+
+    .itemsPart {
+      padding: 20px 0px;
+      justify-content: center;
+      align-items: center;
+      .item {
+        text-align: center;
+        .icon {
+          padding: 20px 0px;
+          img {
+            width: 15%;
+          }
+        }
+        .text {
+          h4 {
+            font-family: inter-bold !important;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* start */
+.start {
+  text-align: center;
+  padding: 50px 0px;
+
+  .startInner {
+    background-image: linear-gradient(to left, #008b8b, #3cb371);
+    border-radius: 10px;
+    padding: 50px;
+
+    h3 {
+      font-family: inter-bold !important;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .startSecBtn {
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 50px 0px;
+
+      a {
+        color: #3cb371;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        box-shadow: 0 0 20px #fff;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* features */
+.features {
+  .featuresInner {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+
+    .headerText {
+      text-align: center;
+      h3 {
+        font-family: inter-bold !important;
+      }
+    }
+
+    .keysPart {
+      padding: 30px 0px;
+      justify-content: center;
+      align-self: center;
+      gap: 20px;
+
+      .keyItem {
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+          font-family: inter-bold !important;
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+.footer {
+  position: static;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 20px 10px;
+  border-top: 1px solid #000;
+  background-color: #fff;
+
+  .footerInner {
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      text-align: start;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        img {
+          width: 10%;
+        }
+      }
+    }
+
+    .copyRight {
+      text-align: end;
+    }
+  }
+}
+
+/* sign in */
+.signIn {
+  position: relative;
+  padding: 40px 0px;
+  text-align: center;
+
+  .signInInner {
+    .backHome {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      background-color: transparent;
+      border: none;
+
+      a {
+        text-decoration: none;
+        color: #3cb371;
+      }
+    }
+
+    .signInForm {
+      width: 30dvw;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+      border-bottom: 1px solid #1e293b;
+
+      .formHeader {
+        text-align: start;
+        padding: 40px 0px;
+        color: #1e293b;
+
+        h3 {
+          font-family: inter-bold !important;
+        }
+      }
+
+      .input-group {
+        outline: 1px solid #d9d9d9;
+        padding: 0;
+
+        span {
+          background-color: #fff;
+          border: none;
+          padding-inline-end: 0;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        input {
+          padding: 10px;
+          padding-inline-start: 0;
+          border: none;
+          text-transform: none !important;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      label {
+        padding: 0;
+        text-align: start;
+        input {
+          margin-inline-end: 5px;
+          border: none;
+        }
+      }
+
+      .toReg {
+        padding: 0;
+        text-align: end;
+        background-color: transparent;
+        border: none;
+
+        a {
+          text-decoration: none;
+          color: #3cb371;
+        }
+      }
+
+      .sigInBtn {
+        background-color: #3cb371;
+        padding: 10px 20px;
+        border: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* sign up */
+.signUp {
+  text-align: center;
+  position: relative;
+
+  .signUpInner {
+    padding: 40px 0px;
+
+    .backHome {
+      position: absolute;
+      top: 5%;
+      right: 5% !important;
+      background-color: transparent;
+      border: none;
+
+      a {
+        text-decoration: none;
+        color: #3cb371;
+      }
+    }
+
+    .signUpForm {
+      width: 30dvw;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+
+      .formHeader {
+        text-align: start;
+        color: #1e293b;
+        h3 {
+          font-family: inter-bold !important;
+        }
+      }
+
+      .input-group {
+        outline: 1px solid #d9d9d9;
+        padding: 0;
+
+        span {
+          background-color: #fff;
+          border: none;
+          padding-inline-end: 0;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        input {
+          padding: 10px;
+          padding-inline-start: 0;
+          border: none;
+          text-transform: none !important;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        select {
+          background-color: #fff;
+          padding: 10px;
+          border: none;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .sigUpBtn {
+        background-color: #3cb371;
+        padding: 10px 20px;
+        border: none;
+        color: #fff;
+      }
+
+      .bott {
+        padding: 0;
+        h6 {
+          color: #1e293b;
+          a {
+            text-decoration: none;
+            color: #3cb371;
+          }
+        }
+        p {
+          color: #1e293b;
+
+          a {
+            text-decoration: none;
+            color: #3cb371;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* body metrics */
+.bodyMetrics {
+  position: relative;
+  padding: 20px 0px;
+
+  h6 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #3cb371;
+  }
+
+  .BMetricsInner {
+    padding: 20px 0px;
+
+    .progressBar {
+      padding: 20px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .bar {
+        border-radius: 10px;
+        height: 3px;
+        background-color: #3cb371;
+      }
+
+      .third,
+      .fourth {
+        background-color: #d9d9d9;
+      }
+    }
+
+    .bodyFrom {
+      width: 30dvw;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px !important;
+      padding: 20px;
+      color: #1e293b;
+
+      .formHeader {
+        padding: 0;
+
+        h3 {
+          font-family: inter-bold !important;
+        }
+      }
+
+      .inputContainer {
+        padding: 0px;
+
+        label {
+          padding: 5px 0px;
+          font-family: inter-bold !important;
+        }
+
+        input {
+          padding: 10px;
+          border-radius: 0;
+          outline: none;
+          border: 1px solid #d9d9d9;
+        }
+      }
+
+      label {
+        padding: 0px;
+        font-family: inter-bold !important;
+      }
+
+      select {
+        background-color: #d9d9d9;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #d9d9d9;
+
+        option {
+          padding: 10px;
+          background-color: #fff;
+        }
+      }
+
+      .disclaimer {
+        background-color: #e6e6e8 !important;
+        margin: auto;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: start;
+        padding: 10px;
+      }
+
+      .btnsSec {
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .backBtn {
+          border: 1px solid #d9d9d9;
+          padding: 10px 20px;
+          border-radius: 5px;
+
+          a {
+            text-decoration: none;
+            color: #1e293b;
+          }
+        }
+
+        .continueBack {
+          background-color: #3cb371;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* health conditions */
+.healthCs {
+  position: relative;
+  padding: 20px 0px;
+
+  h6 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #3cb371;
+  }
+
+  .healthInner {
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+
+    .progressBar {
+      padding: 20px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .bar {
+        border-radius: 10px;
+        height: 3px;
+        background-color: #3cb371;
+      }
+
+      .fourth {
+        background-color: #d9d9d9;
+      }
+    }
+
+    .innerPart {
+      width: 30dvw;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .header {
+        text-align: start;
+        color: #1e293b;
+        h3 {
+          font-family: inter-bold !important;
+        }
+      }
+
+      .section {
+        border: 1px solid #3cb371;
+        padding: 30px;
+        border-radius: 10px;
+        color: #1e293b;
+
+        h4 {
+          padding: 10px 0px;
+          font-family: inter-bold !important;
+
+          img {
+            margin-inline-start: 10px;
+            width: 10%;
+          }
+        }
+
+        select {
+          width: 80%;
+          padding: 10px;
+          margin-inline-end: 10px;
+          background-color: #d9d9d9;
+          border: none;
+          border-radius: 5px;
+
+          option {
+            background-color: #fff;
+          }
+        }
+
+        .addBtn {
+          border: none;
+          padding: 10px;
+          margin: 10px 0px;
+          background-color: #3cb371;
+          color: #fff;
+          border-radius: 5px;
+        }
+      }
+
+      .btnsSec {
+        margin: auto;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+
+        .backBtn {
+          border: 1px solid #d9d9d9;
+          padding: 10px 20px;
+          border-radius: 5px;
+
+          a {
+            text-decoration: none;
+            color: #1e293b;
+          }
+        }
+
+        .continueBack {
+          background-color: #3cb371;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* weightLoss */
+.GoalSumm {
+  position: relative;
+  padding: 20px 0px;
+
+  h6 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #3cb371;
+  }
+
+  .GoalSummInner {
+    justify-content: center;
+    align-items: center;
+
+    .progressBar {
+      padding: 20px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .bar {
+        border-radius: 10px;
+        height: 3px;
+        background-color: #3cb371;
+      }
+    }
+
+    .innerPart {
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .topSec {
+        padding: 10px !important;
+
+        h4 {
+          font-family: inter-bold !important;
+        }
+      }
+
+      .section {
+        padding: 0px;
+        border-radius: 10px;
+        background-color: #e6e6e8;
+        overflow: hidden;
+        border: 1px solid #e6e6e8;
+
+        img {
+          width: 7%;
+          margin-inline-end: 10px;
+        }
+
+        .header {
+          padding: 5px 10px;
+          color: #1e293b;
+          h4 {
+            font-family: inter-bold !important;
+          }
+        }
+
+        .content {
+          padding: 10px 20px;
+          background-color: #f8f9fa;
+
+          .part {
+            text-align: center;
+
+            h4,
+            h5 {
+              font-family: inter-bold !important;
+            }
+            .Negativechange {
+              color: #fd0000;
+            }
+
+            .Pluschange {
+              color: #3cb371;
+            }
+          }
+        }
+      }
+
+      .btnsSec {
+        margin: auto;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+
+        .backBtn {
+          border: 1px solid #d9d9d9;
+          padding: 10px 20px;
+          border-radius: 5px;
+
+          a {
+            text-decoration: none;
+            color: #1e293b;
+          }
+        }
+
+        .continueBack {
+          background-color: #3cb371;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* profile */
+.profile {
+  padding: 100px 0px;
+
+  .profileInner {
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+
+    .rightSide {
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .PSec {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 0;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+
+      h3 {
+        font-family: inter-bold !important;
+      }
+
+      h5 {
+        font-family: inter-bold !important;
+        img {
+          width: 10%;
+          margin-inline-end: 5px;
+        }
+      }
+    }
+
+    .profileEdit {
+      justify-content: start;
+      align-items: center;
+      padding: 30px 0px;
+
+      .img {
+        span {
+          padding: 30px;
+          border-radius: 50%;
+          font-size: 20px;
+          background-image: linear-gradient(to left, #008b8b, #3cb371);
+          color: #fff;
+        }
+      }
+
+      .Btns {
+        text-align: end;
+
+        .editPBtn {
+          border: none;
+          border-radius: 5px;
+          background-image: linear-gradient(to left, #008b8b, #3cb371);
+          color: #fff;
+          padding: 10px 20px;
+          margin-inline-end: 5px;
+        }
+
+        .logOut {
+          border: none;
+          border-radius: 5px;
+          background-color: #fd0000;
+          color: #fff;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    .personalInfo {
+      .innerSec {
+        h5 {
+          img {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* workouts */
+.workouts {
+  padding: 30px 0px;
+  .workoutsInner {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .workout-plan-header {
+      .theAlert {
+        padding: 10px;
+        margin: 0;
+      }
+    }
+
+    .workoutItems {
+      padding: 20px 10px;
+
+      border-radius: 10px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .workout {
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+
+        .details {
+          padding: 10px 0px;
+        }
+
+        .reps {
+          text-align: end;
+        }
+
+        .btns {
+          background-color: #d9d9d9;
+          padding: 10px;
+          text-align: center;
+          justify-content: center;
+          gap: 10px;
+
+          .tryBtn,
+          .watch {
+            border: none;
+            border-radius: 5px;
+            background-color: #3cb371;
+            padding: 5px;
+            color: #fff;
+          }
+        }
+      }
+
+      .btns {
+        text-align: center;
+        .switch {
+          border: none;
+          background-color: #3cb371;
+          color: #fff;
+          margin-inline-end: 10px;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+        .edit {
+          border: 1px solid #1e293b;
+          background-color: #fff;
+          color: #1e293b;
+          margin-inline-end: 10px;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+        .delete {
+          border: 1px solid #1e293b;
+          background-color: #fff;
+          color: #fd0000;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.soon {
+  .soonInner {
+    text-align: center;
+
+    .soonText {
+      background-image: linear-gradient(to left, #008b8b, #3cb371);
+      padding: 10px 20px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 20%;
+      }
+      h1,
+      h4 {
+        color: #fff;
+        margin: 10px 0px;
+        font-weight: bolder;
+      }
+
+      .btns {
+        padding: 10px 0px;
+        button {
+          padding: 5px 10px;
+          margin: 0px 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #fff;
+
+          a {
+            text-decoration: none;
+            color: #3cb371;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* daily */
+.daily {
+  padding: 40px 0px;
+
+  .innerPart {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .dailySummary {
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      h3 {
+        padding: 10px 0px;
+      }
+
+      .targs {
+        border-bottom: 1px solid #1e293b;
+
+        .goal {
+          padding: 0;
+          text-align: center;
+          img {
+            width: 40%;
+          }
+          p {
+            margin: 0;
+          }
+          h4 {
+            font-family: inter-bold !important;
+          }
+        }
+
+        .food {
+          padding: 0;
+          text-align: center;
+          img {
+            width: 40%;
+          }
+          p {
+            margin: 0;
+          }
+          h4 {
+            font-family: inter-bold !important;
+          }
+        }
+
+        .running {
+          padding: 0;
+          text-align: center;
+          img {
+            width: 40%;
+          }
+          p {
+            margin: 0;
+          }
+          h4 {
+            font-family: inter-bold !important;
+            color: #3cb371;
+          }
+        }
+      }
+
+      .tracs {
+        padding: 20px 0px;
+        justify-content: space-between;
+        align-items: center;
+
+        .protein {
+          text-align: center;
+          p {
+            margin: 0;
+          }
+          h4 {
+            span {
+              font-family: inter-bold !important;
+              color: #3cb371;
+            }
+          }
+          .progBar {
+            border-radius: 10px;
+            height: 4px;
+            background-image: linear-gradient(to right, #3cb371 40%, #fff);
+          }
+        }
+        .carbs {
+          text-align: center;
+          p {
+            margin: 0;
+          }
+          h4 {
+            span {
+              font-family: inter-bold !important;
+              color: #008b8b;
+            }
+          }
+          .progBar {
+            border-radius: 10px;
+            height: 4px;
+            background-image: linear-gradient(to right, #008b8b 40%, #fff);
+          }
+        }
+        .fats {
+          text-align: center;
+          p {
+            margin: 0;
+          }
+          h4 {
+            span {
+              font-family: inter-bold !important;
+              color: #f1ff2a;
+            }
+          }
+          .progBar {
+            border-radius: 10px;
+            height: 4px;
+            background-image: linear-gradient(to right, #f1ff2a 40%, #fff);
+          }
+        }
+      }
+    }
+
+    .weightTrack {
+      text-align: center;
+      background-color: #fff;
+      align-content: center;
+      padding: 50px 10px;
+      border-radius: 10px;
+
+      h3 {
+        padding: 10px 0px;
+
+        img {
+          width: 10%;
+        }
+      }
+      h2 {
+        font-family: inter-bold !important;
+      }
+      .updateW {
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-image: linear-gradient(to left, #008b8b, #3cb371);
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* TodayWorkout */
+.TodayWorkout {
+  padding: 30px 0px;
+
+  .todayInner {
+    justify-content: center;
+    align-items: center;
+
+    .innerPart {
+      border-radius: 10px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 10px;
+
+      .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        img {
+          padding: 0;
+          width: 5%;
+        }
+        h4 {
+          text-align: start;
+        }
+        h6 {
+          text-align: end;
+          color: #3cb371;
+        }
+      }
+
+      .workout {
+        background-color: #e6e6e8;
+        padding: 5px;
+        border-radius: 10px;
+        justify-content: start;
+        align-items: center;
+
+        img {
+          padding: 0;
+          width: 5%;
+        }
+
+        .text {
+          display: block;
+        }
+      }
+
+      .btnSec {
+        padding: 0;
+        .startBtn {
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          background-image: linear-gradient(to left, #008b8b, #3cb371);
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* food */
+.food {
+  padding: 30px 0px;
+
+  .foodInner {
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .innerPart {
+      border-radius: 10px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      .header {
+        justify-content: start;
+        align-items: center;
+        padding: 20px 0px;
+
+        img {
+          padding: 0;
+          width: 5%;
+        }
+
+        h4 {
+          text-align: start;
+        }
+      }
+
+      .secPrt {
+        .head {
+          justify-content: space-between;
+          align-items: center;
+          .food-search-container {
+            .inpContainer {
+              input {
+                padding: 5px;
+                border: 1px solid #d9d9d9;
+                outline: none;
+                transition: all 0.3s ease-in-out;
+                &:focus {
+                  border: none;
+                  outline: none;
+                  box-shadow: 0 0 10px #3cb371;
+                }
+              }
+              .dropdown-menu {
+                padding: 5px;
+
+                .dropdown-item {
+                  border: none;
+                }
+              }
+            }
+            .addFood {
+              padding: 5px 10px;
+              background-color: #e6e6e8;
+              border-radius: 10px;
+              color: #3cb371;
+              border: none;
+              font-family: inter-bold !important;
+            }
+          }
+        }
+        ul {
+          padding: 0;
+          list-style: none;
+          li {
+            padding: 10px 0px;
+            border-bottom: 1px solid #1e293b;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* workout log */
+.log {
+  .logInner {
+    justify-content: center;
+    align-items: center;
+
+    .logBar {
+      position: static;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      padding: 20px 10px;
+      background-color: #fff;
+      justify-content: space-between;
+
+      .saveBtn {
+        width: fit-content;
+        background-color: #3cb371;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: #fff;
+      }
+    }
+
+    .logContent {
+      height: 75dvh;
+      padding: 40px 0px;
+      justify-content: center;
+      align-items: start;
+      gap: 10px;
+
+      .exScore {
+        background-color: #fff;
+        margin: 0px;
+        padding: 20px 10px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .score {
+          width: 200px;
+          height: 200px;
+          border: 5px solid #3cb371;
+          border-radius: 50%;
+          position: relative;
+
+          h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .detSide {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .exFeedBAck {
+          background-color: #fff;
+          margin: 0px;
+          padding: 20px 10px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: start;
+
+          h4 {
+            padding: 5px 0px;
+          }
+          .feedBack {
+            padding: 5px 0px;
+          }
+
+          .dateTime {
+            border-top: 1px solid #d9d9d9;
+            padding: 5px 0px;
+          }
+        }
+
+        .exDetails {
+          background-color: #fff;
+          margin: 0px;
+          padding: 20px 10px;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          .details {
+            ul {
+              list-style: none;
+              padding: 0;
+
+              li {
+                margin: 10px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* upbtn */
+.upBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  border: none;
+  border-radius: 0;
+  padding: 5px 10px;
+  font-weight: bolder;
+  background-color: transparent;
+  z-index: 111;
+
+  img {
+    width: 80%;
+  }
+}
+
+/* animation classes */
+.fromLeft {
+  animation: fromLeft linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+.fromRight {
+  animation: fromRight linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+.fromBottom {
+  animation: fromBottom linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+/* responsive */
+@media screen and (min-width: 1200px) {
+  .GnavBar {
+    display: block;
+  }
+  .navBar {
+    display: block;
+  }
+
+  .offCanvTriger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+  .GnavBar {
+    display: none;
+  }
+  .navBar {
+    display: none;
+  }
+
+  .offCanvTriger {
+    display: block;
+  }
+  .signIn {
+    .signInInner {
+      .signInForm {
+        width: 40dvw;
+        margin: auto;
+      }
+    }
+  }
+  .signUp {
+    .signUpInner {
+      .signUpForm {
+        width: 40dvw;
+        margin: auto;
+      }
+    }
+  }
+  .bodyMetrics {
+    .BMetricsInner {
+      .bodyFrom {
+        width: 40dvw;
+        margin: auto;
+      }
+    }
+  }
+  .healthCs {
+    .healthInner {
+      .innerPart {
+        width: 40dvw;
+        margin: auto;
+      }
+    }
+  }
+  .offcanvas {
+    background-color: #d9d9d9d3;
+    backdrop-filter: blur(10px);
+    width: 40dvw !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+  .signIn {
+    .signInInner {
+      .signInForm {
+        width: 60dvw;
+        margin: auto;
+      }
+    }
+  }
+  .signUp {
+    .signUpInner {
+      .signUpForm {
+        width: 60dvw;
+        margin: auto;
+      }
+    }
+  }
+  .bodyMetrics {
+    .BMetricsInner {
+      .bodyFrom {
+        width: 60dvw;
+        margin: auto;
+      }
+    }
+  }
+  .healthCs {
+    .healthInner {
+      .innerPart {
+        width: 60dvw;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+  .signIn {
+    .signInInner {
+      .signInForm {
+        width: 80dvw;
+        margin: auto;
+      }
+    }
+  }
+  .signUp {
+    .signUpInner {
+      .signUpForm {
+        width: 80dvw;
+        margin: auto;
+      }
+    }
+  }
+  .bodyMetrics {
+    .BMetricsInner {
+      .bodyFrom {
+        width: 80dvw;
+        margin: auto;
+      }
+    }
+  }
+  .healthCs {
+    .healthInner {
+      .innerPart {
+        width: 80dvw;
+        margin: auto;
+      }
+    }
+  }
+}
